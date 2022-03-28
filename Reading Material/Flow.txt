@@ -1,0 +1,16 @@
+1 - I2C_User manual
+2 - I2C_DataSheet
+3 - LM75A
+4 - 
+
+
+
+
+
+
+Porting AT commands on shakti
+
+Since fifo has a size of 16 byte I am able to read only 16 byte rest data is being dropped
+So i need ISR to rest data.
+
+

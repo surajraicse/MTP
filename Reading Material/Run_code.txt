@@ -1,0 +1,55 @@
+Minterm---to see output
+
+sudo miniterm /dev/ttyUSB1 19200
+
+
+
+
+Openocd---server for GDB
+
+sudo $(which openocd) -f  ~/shakti-sdk/bsp/third_party/pinaka/ftdi.cfg 
+
+
+GDB-----
+
+cd shakti-sdk/
+make clean
+riscv64-unknown-elf-gdb
+
+file software/examples/i2c_applns/lm75/output/lm75.shakti 
+target remote localhost:3333
+load 
+c   (continue)
+
+
+
+
+cd shakti-sdk/
+make software PROGRAM=lm75 TARGET=pinaka
+
+
+
+
+
+which openocd
+sudo /shakti-tools/bin/openocd -f ~/shakti-sdk/bsp/third_party/pinaka/ftdi.cf
+
+
+
+
+
+
+
+
+
+
+
+WEBSITE
+
+https://beeceptor.com/
+https://thingspeak.com/
+
+
+
+
+
